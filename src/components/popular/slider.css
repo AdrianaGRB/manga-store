@@ -1,0 +1,76 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.slider-styles {
+  width: 70%;
+  height: 80vh;
+  /* margin: 10rem auto; */
+  /*  background-color: red; */
+  margin: 0 auto;
+}
+
+.imgSlider {
+  height: 400px;
+  width: 280px; 
+}
+
+.sliders {
+  height: auto;
+  /*  background-color: blue; */
+}
+
+.slide img {
+  width: 20rem;
+  margin: 0 auto;
+}
+
+.slide {
+  transform: scale(0.5);
+  transition: transform 300ms;
+  opacity: 0.5;
+}
+
+.slide-active {
+  transform: scale(1.1);
+  opacity: 1;
+/*   box-shadow: 17px 1px 42px -8px rgba(255, 255, 255, 0.65);
+  -webkit-box-shadow: 17px 1px 42px -8px rgba(255, 255, 255, 0.65);
+  -moz-box-shadow: 17px 1px 42px -8px rgba(255, 255, 255, 0.65); */
+}
+
+.slick-slide > div {
+  padding: 60px 0;
+}
+
+.sliderText {
+  color: #ffff;
+  font-size: 20px;
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(19, 20, 21, 0.71);
+  text-align: center;
+  padding: 15px;
+}
+
+/* !Prueba */
+
+.slick-dots {
+  bottom: -50px,
+}
+
+.slick-dots li.slick-active button:before {
+  color: var(--pink);
+  font-size: 8px;
+}
+.slick-dots li button:before {
+  color: #ffff;
+  font-size: 6px;
+  line-height: 20px;
+}
+
+@media screen and (max-width: 700px) {
+.imgSlider{
+  width: 208px;
+  height: 221px;
+}
+}
